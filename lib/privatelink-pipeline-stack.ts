@@ -247,7 +247,7 @@ export class PrivatelinkEcsAppStack extends cdk.Stack {
     const vpc = new ec2.Vpc(this, "privatelink-vpc", {
       vpcName:"privatelink-vpc",
       maxAzs: 3, // Default is all AZs in region
-      natGateways:0
+      natGateways:1
     });
 
 

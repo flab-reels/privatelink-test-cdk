@@ -38,7 +38,7 @@ export class PrivatelinkPipelineStack extends cdk.Stack {
           phases: {
             install: {
               "runtime-versions": {
-                java: 'corretto17',
+                java: 'corretto11',
               },
               commands: [
 
@@ -247,7 +247,7 @@ export class PrivatelinkEcsAppStack extends cdk.Stack {
     const vpc = new ec2.Vpc(this, "privatelink-vpc", {
       vpcName:"privatelink-vpc",
       maxAzs: 3, // Default is all AZs in region
-      natGateways:1
+      natGateways:0
     });
 
 

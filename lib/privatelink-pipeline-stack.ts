@@ -38,7 +38,7 @@ export class PrivatelinkPipelineStack extends cdk.Stack {
           phases: {
             install: {
               "runtime-versions": {
-                java: 'corretto11',
+                java: 'corretto17',
               },
               commands: [
 

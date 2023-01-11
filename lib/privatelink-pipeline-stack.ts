@@ -307,7 +307,8 @@ export class PrivatelinkEcsAppStack extends cdk.Stack {
 
     const loadBalancer = new elbv2.NetworkLoadBalancer(this, 'privatelink-alb',{
       vpc,
-      internetFacing:true,
+      internetFacing:false,
+
       // idleTimeout:Duration.seconds(300),
 
     })
